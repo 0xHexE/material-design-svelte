@@ -6,13 +6,18 @@ const name = pkg.name
 	.replace(/^\w/, m => m.toUpperCase())
 	.replace(/-\w/g, m => m[1].toUpperCase());
 
+const external = [
+	...Object.keys(pkg.dependencies),
+];
+
 export default {
-	input: 'src/index.html',
+	input: 'src/index.svelte',
 	output: [
 		{ file: pkg.module, 'format': 'es' },
 		{ file: pkg.main, 'format': 'umd', name }
 	],
 	plugins: [
 		svelte()
-	]
+	],
+	external,
 };

@@ -2,12 +2,10 @@ language: node_js
 
 node_js:
   - "8"
-  - "6"
   - "10"
-  - "lts"
 
 install:
-  - yarn install --frozen-lockfile
+  - npm install
 
 script:
   - npm run lint
@@ -20,4 +18,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npm run semantic-release && yarn run styleguide:deploy --repo="https://${GH_TOKEN}@github.com/httpsOmkar/auth-react-component.git"
+    - npm run semantic-release && npm run styleguide:deploy --repo="https://${GH_TOKEN}@github.com/httpsOmkar/material-design-svelte.git"

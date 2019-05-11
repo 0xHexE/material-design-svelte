@@ -2,6 +2,8 @@
 node_modules
 yarn.lock
 /index.svelte
+/index.js
+/index.js
 index.mjs
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm

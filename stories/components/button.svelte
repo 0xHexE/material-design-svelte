@@ -14,3 +14,7 @@
 <Button {...$$props} dense="{true}" on:click>
     { label }
 </Button>
+
+<Button {...$$props} on:click disabled="false">
+    { label }
+</Button>

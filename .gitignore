@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 yarn.lock
-/index.js
+/index.svelte
 index.mjs
 .storybook
 

@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "semantic-release": "semantic-release",
+    "test": "echo In progress",
+    "lint": "echo in progress"
   },
   "devDependencies": {
     "rollup": "^0.67.4",
     "rollup-plugin-svelte": "^4.4.0",
-    "svelte": "^2.15.3"
+    "svelte": "^2.15.3",
+    "semantic-release": "^15.13.12"
   },
   "keywords": [
     "svelte"
@@ -21,11 +25,11 @@
     "index.js"
   ],
   "description": "Material component for web wrapper just for svelte",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/httpsOmkar/material-design-svelte.git"
+    "url": "https://github.com/httpsOmkar/material-design-svelte.git"
   },
   "author": "Omkar Yadav <httpsomkar@gmail.com>",
   "license": "ISC",

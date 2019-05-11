@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "8"
+  - "6"
+  - "10"
+  - "lts"
+
+install:
+  - yarn install --frozen-lockfile
+
+script:
+  - npm run lint
+  - npm run test
+  - npm run build
+
+deploy:
+  on:
+    branch: master
+  provider: script
+  skip_cleanup: true
+  script:
+    - npm run semantic-release && yarn run styleguide:deploy --repo="https://${GH_TOKEN}@github.com/httpsOmkar/auth-react-component.git"

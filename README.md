@@ -4,7 +4,7 @@ Work in progress
 
 TODOs:
 
-- [ ] Button
+- [x] Button
 - [ ] Floating action button
 - [ ] Icon button
 - [ ] Cards

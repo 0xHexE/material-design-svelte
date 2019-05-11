@@ -8,13 +8,27 @@
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
     "test": "echo In progress",
-    "lint": "echo in progress"
+    "lint": "echo in progress",
+    "commit": "npx git-cz",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "styleguide:deploy": "styleguidist build && gh-pages -d styleguide --remote upstream"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.1.0-beta.0",
+    "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-links": "^5.1.0-beta.0",
+    "@storybook/addons": "^5.1.0-beta.0",
+    "@storybook/svelte": "^5.1.0-beta.0",
+    "babel-loader": "^8.0.5",
+    "gh-pages": "^2.0.1",
     "rollup": "^0.67.4",
     "rollup-plugin-svelte": "^4.4.0",
+    "sass-loader": "^7.1.0",
     "semantic-release": "^15.13.13",
-    "svelte": "^2.15.3"
+    "svelte": "^3.2.2",
+    "svelte-loader": "^2.13.3"
   },
   "keywords": [
     "svelte"
@@ -26,7 +40,10 @@
   ],
   "description": "Material component for web wrapper just for svelte",
   "version": "0.0.0-development",
-  "dependencies": {},
+  "dependencies": {
+    "@material/button": "^2.1.1",
+    "@material/ripple": "^2.1.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/httpsOmkar/material-design-svelte.git"

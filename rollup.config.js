@@ -6,6 +6,10 @@ const name = pkg.name
 	.replace(/^\w/, m => m.toUpperCase())
 	.replace(/-\w/g, m => m[1].toUpperCase());
 
+const external = [
+	...Object.keys(pkg.dependencies),
+];
+
 export default {
 	input: 'src/index.svelte',
 	output: [
@@ -14,5 +18,6 @@ export default {
 	],
 	plugins: [
 		svelte()
-	]
+	],
+	external,
 };

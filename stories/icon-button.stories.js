@@ -1,52 +1,16 @@
 import {storiesOf} from "@storybook/svelte";
 import {withKnobs} from "@storybook/addon-knobs";
-import Fab from '../src/fab.svelte';
 import {action} from "@storybook/addon-actions";
+import IconButton from '../src/icon-button.svelte';
 
-storiesOf('FAB', module)
+storiesOf('Icon Button', module)
     .addDecorator(withKnobs)
-    .add('normal', () => {
-        return ({
-            Component: Fab,
-            props: {
-                icon: 'home'
-            },
-            on: {
-                click: action('clicked')
-            },
-        });
-    })
-    .add('mini', () => {
-        return ({
-            Component: Fab,
-            props: {
-                icon: 'home',
-                mini: true,
-            },
-            on: {
-                click: action('clicked')
-            },
-        });
-    })
-    .add('extended', () => {
-        return ({
-            Component: Fab,
-            props: {
-                icon: 'home',
-                isExtended: true,
-                label: 'Create FAB'
-            },
-            on: {
-                click: action('clicked')
-            },
-        });
-    })
     .add('extended without icon', () => {
         return ({
-            Component: Fab,
+            Component: IconButton,
             props: {
-                isExtended: true,
-                label: 'Create FAB'
+                ariaLabel: 'Create FAB',
+                icon: 'add',
             },
             on: {
                 click: action('clicked')

@@ -33,8 +33,7 @@
         class:mdc-button--dense="{dense}"
         class:mdc-button__icon="{!!icon}"
         on:click
-        {disabled}
-        {...$$props}>
+        {disabled}>
     {#if icon}
         <Icon icon="{icon}"></Icon>
     {/if}

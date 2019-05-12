@@ -5,8 +5,8 @@ Work in progress
 TODOs:
 
 - [x] Button
-- [ ] Floating action button
-- [ ] Icon button
+- [x] Floating action button
+- [x] Icon button
 - [ ] Cards
 - [ ] Chips
 - [ ] Dialog
